@@ -10,7 +10,16 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
-    @FindBy(xpath = "//a[@class='fab fa-facebook-f']")
+//mainpage/bottomleftcorner
+    @FindBy(xpath = "//*[@class='fab fa-facebook-f']")
     public WebElement facebookIcon;
+
+    //mainpage/bottomleftcorner
+    @FindBy(xpath = "//*[@class='fab fa-twitter']")
+    public WebElement twitterIcon;
+
+    //mainpage/bottomleftcorner
+    @FindBy(xpath = "//*[@class='fab fa-linkedin']")
+    public WebElement linkedinIcon;
+
 }
